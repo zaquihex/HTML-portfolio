@@ -1,0 +1,298 @@
+html {
+  height: 100vh;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 90vh;
+  padding: 0;
+  margin: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.polygon {
+  position: absolute;
+  top: -300px;
+  left: -200px;
+  z-index: -1;
+}
+
+ul.navBar {
+  margin: auto;
+  width: 60vh;
+  height: 10vh;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+ul.navBar li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 2.6rem;
+  padding: 1rem 3rem;
+  border-radius: 35px;
+  letter-spacing: .4rem;
+  cursor: pointer;
+}
+
+ul.navBar .active {
+  background: #8ED0E5;
+  color: #fafafa;
+}
+
+.home-fullbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 80vh;
+}
+
+.home-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  min-height: 70vh;
+}
+
+.home-body .info {
+  -webkit-box-flex: 7;
+      -ms-flex: 7 1 40rem;
+          flex: 7 1 40rem;
+}
+
+.home-body .info .infoTitle {
+  margin-bottom: 1rem;
+}
+
+.home-body .info .infoSubtitle {
+  margin-bottom: 3rem;
+}
+
+.home-body .imgProfile {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  margin: 0rem 3rem;
+}
+
+.home-body .programs {
+  max-height: 600px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  align-items: center;
+}
+
+.home-body .programs .programTitle {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.home-body .programs .list-programs {
+  -webkit-box-flex: 80;
+      -ms-flex: 80;
+          flex: 80;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-body .programs .list-programs .program {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-body .programs .list-programs .program .imgProgram {
+  margin-right: 25px;
+}
+
+.home-body .programs .list-programs .program .nameProgram {
+  width: 20px;
+}
+
+.skill-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 10vh;
+}
+
+.skill-section .title-skills {
+  text-align: center;
+}
+
+.skill-section .list-skills {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+}
+
+.skill-section .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill-section .skill .nameSkill {
+  margin-left: 25px;
+}
+
+.footer {
+  background-color: #8ED0E5;
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .author {
+  color: white;
+  font-size: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 25px;
+}
+
+.underlineSpecial {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 30px 0 0 #8ED0E5;
+          box-shadow: 0 30px 0 0 #8ED0E5;
+  height: 5px;
+}
+
+.header1 {
+  font-size: 4rem;
+}
+
+.header2 {
+  font-size: 3rem;
+}
+
+.header3 {
+  font-size: 2.5rem;
+}
+
+.text {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */

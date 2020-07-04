@@ -1,0 +1,165 @@
+$header1: 4rem;
+$header2: 3rem;
+$header3: 2.5rem;
+$text: 2rem;
+$margin: 10rem;
+$blue: #8ED0E5;
+
+html {
+    height: 100vh;
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;   
+}
+
+body {
+    height: 90vh;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.polygon {
+    position: absolute;
+    top: -300px;
+    left: -200px;
+    z-index: -1;
+}
+
+ul.navBar {
+    margin: auto;
+    width: 60vh;
+    height: 10vh;
+    list-style: none;
+    @include flex(row, space-around, center);
+    flex-wrap: wrap;
+    li {
+        flex: 1;
+        font-size: 2.6rem;
+        padding: 1rem 3rem;
+        border-radius: 35px;
+        letter-spacing: .4rem;
+        cursor: pointer;
+    }
+    .active {
+        background: $blue;
+        color: #fafafa;
+    }
+}
+
+.home-fullbody {
+    @include flex(column, center, center);
+    flex-wrap: wrap;
+    min-height: 80vh;
+}   
+
+.home-body {
+    @include flex(row, auto, auto);
+    flex-wrap: wrap;
+    margin: auto;
+    margin-left: $margin;
+    margin-right: $margin;
+    min-height: 70vh;
+    .info {
+        flex: 7 1 40rem;
+        .infoTitle {
+            margin-bottom: 1rem;
+        }
+        .infoSubtitle {
+            margin-bottom: 3rem;
+        }
+    }
+    .imgProfile {
+        flex: 1 1 20rem;
+        margin: 0rem 3rem;
+    }
+    .programs {
+        .programTitle {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+            flex: 1;
+        }
+        
+        max-height: 600px;
+        align-items: center;
+        flex: 1 1 20rem;
+        @include flex(column, auto, center);
+        .list-programs {
+            flex: 80;
+            @include flex(column, space-around, center);
+            .program {
+                @include flex(row, space-around, center);
+                .imgProgram {
+                    margin-right: 25px;
+                }
+                .nameProgram {
+                    width: 20px;
+                }
+            }
+        }
+        
+    }
+}
+
+.skill-section {
+    @include flex(column, center, auto);
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10vh;
+    .title-skills {
+        text-align: center;
+    }
+    .list-skills {
+        margin-top: 40px;
+        @include flex(row, space-around, auto);
+    }
+    .skill {
+        @include flex(row, center, center);
+        .nameSkill {
+            margin-left: 25px;
+        }
+    }
+}
+
+.footer {
+    background-color: $blue;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    .author {
+        color: white;
+        font-size: 2rem;
+        align-items: center;
+        flex: 1;
+        margin-left: 25px;
+    }
+}
+
+.underlineSpecial {
+    border-radius: 10px;
+    box-shadow: 0 30px 0 0 $blue;
+    height: 5px;
+}
+
+.header1 {
+    font-size: $header1;
+}
+.header2 {
+    font-size: $header2;
+}
+
+.header3 {
+    font-size: $header3;
+}
+
+.text {
+    font-size: $text;
+}
