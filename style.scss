@@ -18,6 +18,8 @@ body {
     flex-wrap: wrap;
 }
 
+@import './projects/projects';
+
 @mixin flex($direction, $justify, $align) {
     display: flex;
     flex-direction: $direction;
@@ -39,24 +41,32 @@ ul.navBar {
     list-style: none;
     @include flex(row, space-around, center);
     flex-wrap: wrap;
+    
     li {
         flex: 1;
         font-size: 2.6rem;
         padding: 1rem 3rem;
         border-radius: 35px;
         letter-spacing: .4rem;
+        text-align: center;
         cursor: pointer;
+        a {
+            text-decoration: none;
+            color: black;
+        }
     }
     .active {
         background: $blue;
-        color: #fafafa;
+        a {
+            color: #fafafa;
+        }
     }
 }
 
 .home-fullbody {
     @include flex(column, center, center);
     flex-wrap: wrap;
-    min-height: 80vh;
+    min-height: 85vh;
 }   
 
 .home-body {
@@ -65,7 +75,7 @@ ul.navBar {
     margin: auto;
     margin-left: $margin;
     margin-right: $margin;
-    min-height: 70vh;
+    min-height: 45vh;
     .info {
         flex: 7 1 40rem;
         .infoTitle {
@@ -112,12 +122,13 @@ ul.navBar {
     @include flex(column, center, auto);
     flex-wrap: wrap;
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     .title-skills {
         text-align: center;
+        margin: 0px 100px;
     }
     .list-skills {
-        margin-top: 40px;
+        margin-top: 60px;
         @include flex(row, space-around, auto);
     }
     .skill {
@@ -131,7 +142,7 @@ ul.navBar {
 .footer {
     background-color: $blue;
     width: 100%;
-    height: 10vh;
+    height: 5vh;
     display: flex;
     align-items: center;
     .author {
